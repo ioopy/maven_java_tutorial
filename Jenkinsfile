@@ -4,7 +4,7 @@ pipeline {
     }
     tools {
         maven 'Maven'
-        jdk 'java'
+        jdk 'jdk'
     }
     stages {
         stage ('Initialize') {
