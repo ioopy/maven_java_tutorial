@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label "windows"
+        label "master"
     }
     tools {
         maven 'M2_HOME'
