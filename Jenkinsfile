@@ -3,8 +3,8 @@ pipeline {
         label "windows"
     }
     tools {
-        maven 'maven'
-        jdk 'jdk'
+        maven 'M2_HOME'
+        jdk 'JAVA_HOME'
     }
     stages {
         stage ('Initialize') {
