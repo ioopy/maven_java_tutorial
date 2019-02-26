@@ -20,6 +20,16 @@ pipeline {
             steps {
                     bat 'cd NumberGenerator & mvn install'
             }
+            
+                 
+               
+
+           
+            }
+        stage ('test') {
+            steps {
+                    bat 'mvn verify'
+            }
              post {
                 success {
                     junit 'NumberGenerator/target/surefire-reports/*.xml'
