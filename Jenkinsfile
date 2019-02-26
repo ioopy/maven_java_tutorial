@@ -28,7 +28,7 @@ pipeline {
             }
         stage ('test') {
             steps {
-                    bat 'mvn verify'
+                    sh 'mvn verify'
             }
              post {
                 success {
