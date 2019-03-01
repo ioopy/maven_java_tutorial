@@ -19,7 +19,7 @@ pipeline {
         stage ('Build') {
             steps {
                     bat 'cd NumberGenerator & mvn install '
-                    bat ' pybot E:\AAAInternship\Automated_Test\Robot_test\Testcase.txt '
+                    bat ' pybot E:\\AAAInternship\\Automated_Test\\Robot_test\\Testcase.txt '
             }
              post {
                 success {
